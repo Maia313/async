@@ -15,3 +15,23 @@ The `Fetch API` is a much needed improvement over XMLHttpRequest, the old API fo
    + `How to use Request objects to have more control over the fetch() method.`
    
    
+### Basic Fetch Usage
+
+Notice how a `fetch()` method is used to make a simple network request:
+```js
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then(function(result){
+       return result.json()  
+    })
+    .then(function(result){
+       console.log(result);
+       //logs Object {completed: false, id: 1, title: "delectus aut autem", userId: 1}
+    })
+    .catch(function(err){
+        console.log(err);
+});
+```
+##### Fetch(url)
+
+The `fetch() method takes in an URL endpoint and is used to make a network request`. The fetch() method returns a Promise that contains a Response object.
+
