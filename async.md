@@ -41,3 +41,9 @@ The Event Queue is a queue that keeps track of tasks that are waiting to be put 
 ### The Event Loop
 
 When the call stack is empty, it takes the first task off the event queue and processes it. The remaining tasks on the queue wait until the call stack is empty again. This cycle is called the Event Loop.
+
+`Asynchronous Programming` is achieved in JavaScript by using Web APIs that process code on separate threads. The Web API's send their processed results back as tasks on the event queue. These tasks are defined by callback functions passed into the Web APIs. This allows JavaScript to achieve multi-threading in a single threaded run time.
+
+### Synchronous vs Asynchronous Programming
+
+Imagine trying to run a slow task synchronously. It will take a long time to finish processing and will prevent other tasks from running.
