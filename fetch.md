@@ -117,3 +117,32 @@ var initObject = {
 }
 
 ```
+
+### Headers
+
+The headers attribute is used to add more information about the resource being fetched or the client doing the fetching. A Headers object can be created using the new Headers() constructor and individual headers can be added to the Headers object through the `append()` method.
+
+Notice how a new Headers object is created and assigned to the headers attribute of the init object:
+```js
+var myHeaders = new Headers();
+myHeaders.append('Content-Type', 'application/json');
+
+var initObject = {
+    headers: myHeaders
+}
+```
+### Mode
+
+The mode attribute is a string that is used to determine whether or not the Fetch request can fetch resources from different servers.
+
++ In this course we will cover the following two mode types:
+
+   + `same-origin - the Fetch request can only fetch resources from the same server`
+   + `cors (cross origin HTTP request) - the Fetch request can fetch resources from different servers`
+
+Notice how an init object is created with a mode attribute set to 'cors':
+```js
+var initObject = {
+    mode: 'cors'
+}
+```
