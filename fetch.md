@@ -94,7 +94,7 @@ The method attribute is a string that is used to specify the HTTP request method
    + `Put - used to create a new data resource or modify an existing data resource`
    + `Delete - used to delete a data resource`
 
-Notice how an init object with a method attribute of "Post" can be created:
+Notice how an init object with a method attribute of `"Post"` can be created:
 ```js
 var initObject = {
     method: 'POST'
@@ -104,7 +104,7 @@ var initObject = {
 
 The body attribute is a JSON string used to send data along with a fetch request. If the body value is an object, it is important to stringify the object that is being sent using `JSON.stringify()` or it will not process correctly. Get and Head HTTP requests can not have bodies.
 
-Notice how an init object with a body attribute representing an object can be created:
+Notice how an init object with a `body attribute` representing an object can be created:
 ```js
 var myBody = {
     id: 12345,
@@ -122,7 +122,7 @@ var initObject = {
 
 The headers attribute is used to add more information about the resource being fetched or the client doing the fetching. A Headers object can be created using the new Headers() constructor and individual headers can be added to the Headers object through the `append()` method.
 
-Notice how a new Headers object is created and assigned to the headers attribute of the init object:
+Notice how `a new Headers object is created and assigned to the headers attribute of the init object`:
 ```js
 var myHeaders = new Headers();
 myHeaders.append('Content-Type', 'application/json');
@@ -140,7 +140,7 @@ The mode attribute is a string that is used to determine whether or not the Fetc
    + `same-origin - the Fetch request can only fetch resources from the same server`
    + `cors (cross origin HTTP request) - the Fetch request can fetch resources from different servers`
 
-Notice how an init object is created with a mode attribute set to 'cors':
+Notice how an init object is created with a mode attribute set to `'cors'`:
 ```js
 var initObject = {
     mode: 'cors'
