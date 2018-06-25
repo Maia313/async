@@ -35,3 +35,13 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
 
 The `fetch() method takes in an URL endpoint and is used to make a network request`. The fetch() method returns a Promise that contains a Response object.
 
+### Extracting data from a Response object:
+
+A Response object has several methods that are used to extract the fetched data.
+
++ Here are the common extraction methods:
+
+   + `json() is used to extract a json object`
+   + `text() is used to extract a text string`
+   + `blob() is used to extract a file-like object`
+
