@@ -47,3 +47,8 @@ When the call stack is empty, it takes the first task off the event queue and pr
 ### Synchronous vs Asynchronous Programming
 
 Imagine trying to run a slow task synchronously. It will take a long time to finish processing and will prevent other tasks from running.
+
+### SetTimeout()
+
+The `setTimeout()` method is used to schedule a task to be put on the event queue after a given amount of time. The first parameter to `setTimeout()` is the callback function that is going to be executed. The second parameter is the amount of time to wait before putting the task on the event queue. `setTimeout()` is non-blocking and other code may run while the `setTimeout()` task is waiting to be executed.
+
