@@ -45,3 +45,40 @@ A Response object has several methods that are used to extract the fetched data.
    + `text() is used to extract a text string`
    + `blob() is used to extract a file-like object`
 
+
+### Fetch Init Object
+
+The `fetch()` method can also take in an optional init object. This object applies custom settings to the Fetch request.
+
+Notice how the `fetch()` method is used with an `URL endpoint` and an init object:
+```js
+//this init object specifies the method, headers, mode and body of the request
+var initObject = {
+    method: 'POST',
+    headers: new Headers(),
+    mode: 'cors',
+    body: "{}" 
+}
+
+//fetch() method used with an URL endpoint and an init object
+fetch("https://jsonplaceholder.typicode.com/posts",initObject) 
+    .then(function(result){ //result contains a Response object
+       return result.json() //returns a promise containing JSON data extracted from the Response object
+
+    })
+    .then(function(result){
+       console.log(result);
+       //logs Object {id: 101}
+
+    })
+    .catch(function(err){
+        console.log(err);
+});
+```
++ The following attributes of the init object will be covered in more detail in the next few sections:
+
+   + `method`
+   + `body`
+   + `headers`
+   + `mode`
+
