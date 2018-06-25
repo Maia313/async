@@ -26,4 +26,4 @@ Asynchronous Programming prevents slow tasks from blocking faster tasks from run
 
 + **Stack Overflow**
 
-If the call stack grows too large and exceeds the amount of memory allocated, a Stack Overflow Error will occur. This commonly happens when a function calls itself recursively.
+If the call stack grows too large and exceeds the amount of memory allocated, a Stack Overflow Error will occur. `This commonly happens when a function calls itself recursively.`
