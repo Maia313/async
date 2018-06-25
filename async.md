@@ -13,3 +13,17 @@ Asynchronous Programming prevents slow tasks from blocking faster tasks from run
     + `How to user Callback Functions`
     + `How to use Timers`
     + `How to handle DOM Events`
+    
++ **The Call Stack**
+
+`The call stack tracks functions that are currently active and are being processed.`
+
++ The call stack functions in the following way:
+
+   + When a function call is encountered, it is pushed onto the call stack.
+   + Any additional functions called within the original function are placed higher up onto the call stack.
+   + When a function finishes executing, it is popped off the call stack and the next function on the call stack is processed.
+
++ **Stack Overflow**
+
+If the call stack grows too large and exceeds the amount of memory allocated, a Stack Overflow Error will occur. This commonly happens when a function calls itself recursively.
