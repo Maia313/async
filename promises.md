@@ -1,6 +1,6 @@
 ### What are Promises?
 
-Promises are containers for values that are not yet available yet but may eventually become available.
+`Promises` are containers for values that are not yet available yet but may eventually become available.
 
 ### Why are Promises important?
 
