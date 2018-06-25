@@ -27,3 +27,7 @@ Asynchronous Programming prevents slow tasks from blocking faster tasks from run
 + **Stack Overflow**
 
 If the call stack grows too large and exceeds the amount of memory allocated, a Stack Overflow Error will occur. `This commonly happens when a function calls itself recursively.`
+
+### The Event Queue
+
+The Event Queue is a queue that keeps track of tasks that are waiting to be put on the call stack to be executed. Tasks get added to the Event Queue by Web APIs that run in parallel with the JavaScript run time.
