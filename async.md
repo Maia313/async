@@ -30,7 +30,7 @@ If the call stack grows too large and exceeds the amount of memory allocated, a 
 
 ### The Event Queue
 
-The Event Queue is a queue that keeps track of tasks that are waiting to be put on the call stack to be executed. Tasks get added to the Event Queue by Web APIs that run in parallel with the JavaScript run time.
+> The Event Queue is a queue that keeps track of tasks that are waiting to be put on the call stack to be executed. Tasks get added to the Event Queue by Web APIs that run in parallel with the JavaScript run time.
 
 + Here are `three examples of Web APIs` that add tasks to the event queue:
 
@@ -40,7 +40,7 @@ The Event Queue is a queue that keeps track of tasks that are waiting to be put 
 
 ### The Event Loop
 
-When the call stack is empty, it takes the first task off the event queue and processes it. The remaining tasks on the queue wait until the call stack is empty again. This cycle is called the Event Loop.
+> When the call stack is empty, it takes the first task off the event queue and processes it. The remaining tasks on the queue wait until the call stack is empty again. This cycle is called the Event Loop.
 
 `Asynchronous Programming` is achieved in JavaScript by using Web APIs that process code on separate threads. The Web API's send their processed results back as tasks on the event queue. These tasks are defined by callback functions passed into the Web APIs. This allows JavaScript to achieve multi-threading in a single threaded run time.
 
