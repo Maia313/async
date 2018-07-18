@@ -57,11 +57,3 @@ The `setTimeout()` method is used to schedule a task to be put on the event queu
 DOM Event Listeners happen in parallel with the JavaScript run time. When an event occurs, the event listener detects the event and executes an event handler to put a task on the event queue. The task will eventually make its way to the call stack to be executed.
 
 If multiple events are detected, multiple tasks will be put on the event queue in the order in which they occurred. When the call stack is empty, the first task on the event queue is pushed onto the call stack. When this task finishes, the cycle continues and the next task on the event queue is pushed onto the call stack. Thus, if a certain task takes a long time to finish, the tasks behind it on the event queue will have to wait.
-Types of HTML DOM Events
-
-+ Here are some examples of HTML DOM Events:
-
-   + Click Event - occurs when a user clicks a DOM element
-   + Mouseenter Event - occurs when a pointer is moved over an element
-   + Mouseleave Event - occurs when a pointer is moved out of an element
-   + Keypress Event - occurs when a key is pressed
