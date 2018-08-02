@@ -100,7 +100,7 @@ var initObject = {
     method: 'POST'
 }
 ```
-#### Body
+### Body
 
 The body attribute is a JSON string used to send data along with a fetch request. If the body value is an object, it is important to stringify the object that is being sent using `JSON.stringify()` or it will not process correctly. Get and Head HTTP requests can not have bodies.
 
