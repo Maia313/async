@@ -6,12 +6,10 @@
 
 Promises are becoming the standard way to handle asynchronous functions in JavaScript.
 
-+ What are we going to learn?
++ About Promises
 
-   + How to create a Promise
-   + How to get the result out of a Promise
-   + How to chain Promises together
-   + How to handle multiple Promises at the same time
+   + Creating a Promise
+   + Chaining Promises
 
 ### Creating a new Promise
 ```js
