@@ -5,7 +5,7 @@ The `Fetch API` is an interface that is used to make network requests.
 
 ### Why is the Fetch API important?
 
-The `Fetch API` is a much needed improvement over XMLHttpRequest, the old API for making network request. The Fetch API is built into most modern browsers and also returns Promises.
+The `Fetch API` is a much needed improvement over XMLHttpRequest - the old API for making network request. The Fetch API is built into most modern browsers and also returns Promises.
 
 + What are we going to learn?
 
