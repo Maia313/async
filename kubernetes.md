@@ -6,7 +6,7 @@ Can be used to:
       - a master that coordinates the cluster
       - nodes which are the workers which run the application
       
-> Desploy an application
+> Deploy an application
   * kubectl
   
 > Explore an application
