@@ -9,3 +9,5 @@
 [Historical prototypes of different webpages](https://archive.org)
 
 [Exploring JS book](https://exploringjs.com/impatient-js/index.html)
+
+[JS info](https://javascript.info/)
